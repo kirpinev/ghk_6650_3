@@ -10,7 +10,7 @@ import { useState } from "react";
 import { LS, LSKeys } from "./ls";
 
 const sduiLink =
-  "alfabank://sdui_screen?screenName=InvestmentLongread&fromCurrent=true&endpoint=v1/invest-main-screen-view/investment-longread/93194%3flocation=AM_MAIN%26campaignCode=01";
+  "alfabank://sdui_screen?screenName=InvestmentLongread&fromCurrent=true&shouldUseBottomSafeArea=true&endpoint=v1/invest-main-screen-view/investment-longread/94445%3flocation=AM_MAIN%26campaignCode=01";
 
 const Redirect = () => {
   window.location.href = sduiLink;
