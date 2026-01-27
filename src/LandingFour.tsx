@@ -100,19 +100,17 @@ export const LandingFour = ({ handleClick }: { handleClick: () => void }) => {
               background: "white",
               borderRadius: "16px",
             }}
-          >
-            <div
-              style={{ display: "flex", justifyContent: "space-between" }}
-              onClick={() => {
-                window.gtag("event", "6650_start_study_click", {
-                  course_name: "Бизнес на маркетплейсах",
-                  variant_name: "6650_3",
-                });
+            onClick={() => {
+              window.gtag("event", "6650_start_study_click", {
+                course_name: "Бизнес на маркетплейсах",
+                variant_name: "6650_3",
+              });
 
-                setClick(true);
-                LS.setItem(LSKeys.ShowThx, true);
-              }}
-            >
+              setClick(true);
+              LS.setItem(LSKeys.ShowThx, true);
+            }}
+          >
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
               <Typography.Text
                 tag="p"
                 view="primary-medium"
