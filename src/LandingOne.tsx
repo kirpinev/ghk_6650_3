@@ -104,6 +104,11 @@ export const LandingOne = ({ handleClick }: { handleClick: () => void }) => {
             <div
               style={{ display: "flex", justifyContent: "space-between" }}
               onClick={() => {
+                window.gtag("event", "6650_start_study_click", {
+                  course_name: "Создание и продвижение бизнеса",
+                  variant_name: "6650_3",
+                });
+
                 setClick(true);
                 LS.setItem(LSKeys.ShowThx, true);
               }}
@@ -122,12 +127,6 @@ export const LandingOne = ({ handleClick }: { handleClick: () => void }) => {
               tag="p"
               view="primary-small"
               style={{ marginBottom: 0, fontWeight: "500", color: "#BA3DD8" }}
-              onClick={() => {
-                window.gtag("event", "6650_start_study_click", {
-                  course_name: "Создание и продвижение бизнеса",
-                  variant_name: "6650_3",
-                });
-              }}
             >
               Начать обучение
             </Typography.Text>
